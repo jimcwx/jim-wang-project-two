@@ -656,7 +656,7 @@ header.blogPage {
   background: #f6a823;
 }
 
-header.blogPage .topBar nav li:nth-child(4) a {
+header.blogPage .topBar nav li:nth-child(2n) a {
   color: white;
 }
 
