@@ -1,0 +1,201 @@
+//This is where all the responsive design stylings live
+
+
+
+@media (max-width:1000px) {
+
+  //HOME PAGE
+  header.homePage {
+
+    height: auto;
+    .logoPicture .logo {
+      display: none;
+
+    }
+
+    
+
+    .logoPicture .imgContainer:nth-child(2) {
+      width: 100%;
+      top: 0;
+      img {
+        box-shadow: none;
+      }
+      
+    }
+    
+
+  }
+
+  main.homePage {
+    .threeArticles article.topArticle {
+      padding: 40px 0;
+      text-align: center;
+    }
+  }
+  
+}
+
+@media (max-width: 945px) {
+  main.contactPage {
+    .contactAndForm .information,
+    .contactAndForm form.blogForm {
+      width: 100%;
+    }
+    .contactAndForm form.blogForm {
+      margin: 20px;
+    }
+
+    .contactAndForm .information {
+      text-align:center;
+        ul.socialMedia {
+          justify-content: center;
+        }
+    }
+  }
+}
+
+
+@media (max-width:720px) {
+  //Nav Bar Changes
+  .topBar ul {
+    flex-direction: column;
+  }
+
+  ul h3:nth-child(3) {
+    order: 0;
+  }
+
+  ul li {
+    order: 1;
+    margin: 10px;
+  }
+
+  //Home Page Changes
+  main.homePage {
+    
+    //Home page middle articles changes
+    
+
+    .middleArticle .imgContainer,
+    .middleArticle article,
+    .bottomArticle .imgContainer,
+    .bottomArticle article {
+      width: 100%;
+    }
+
+    .middleArticle .imgContainer img,
+    .bottomArticle .imgContainer img {
+      right:0;
+      bottom:0;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .middleArticle article,
+    .bottomArticle article {
+      text-align: center;
+    }
+
+    .bottomArticle article {
+      margin: 30px 0;
+    }
+
+    //MIDDLE OF PAGE NAVIGATION
+
+    .midNav nav li {
+      width: 100%;
+    }
+
+    //LAST ARTICLE ON HOME PAGE
+
+    .finalArticle {
+      padding: 80px 0;
+    }
+    .finalArticle .imgContainer {
+      display: none;
+    }
+
+    .finalArticle article {
+      width: 100%;
+      text-align: center;
+    }
+
+    //PHOTOS SECTION
+    .photos {
+      margin: 0;
+    }
+
+    .photos .imgContainer {
+      padding: 0;
+    }
+  }
+
+  main.blogPage .blogArea {
+    aside {
+      width: 100%;
+      margin: 20px;
+      .blogAbout {
+        text-align: center;
+      }
+      .recentPosts {
+        text-align: center;
+      }
+    }
+    .articles {
+      width: 100%;
+      margin: 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main.homePage {
+    //GETTING RID OF MIDDLE OF PAGE NAV ICONS
+    .midNav .iconContainer {
+      display: none;
+    }
+    //PHOTOS SECTION
+    .photos .imgContainer {
+      width: 50%;
+    }
+  
+    .photos .imgContainer:last-child {
+      display:none;
+    }
+
+  }
+
+  main.blogPage .blogArticles .articles {
+    article.withPic .imgContainer,
+    article.withPic .textSection {
+      width: 100%;
+    }
+
+    .nameEmail {
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  main.contactPage .contactAndForm .blogForm {
+  
+    .nameEmail {
+      input[type="text"],
+      input[type="email"] {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  
+}
+
+  
+
+
+}

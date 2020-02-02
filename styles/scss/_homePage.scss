@@ -1,0 +1,252 @@
+// Here beings the stylings for the home page
+
+header.homePage {
+    min-height: 80vh;
+    
+    background: $secondaryBackgroundColor;
+
+    //Here beings the stylings for the hero page
+    .topBar nav li:first-child {
+        a {
+            color: white;
+        }
+    }
+
+    .logoPicture {
+        @include flexHorCenter;
+    }
+
+    .logoPicture .imgContainer:nth-child(2) {
+
+        position: relative;
+        top :50px;
+        img {
+        -webkit-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+        -moz-box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+        box-shadow: 10px 10px 0px 0px rgba(255,255,255,1);
+
+    }
+
+
+    } 
+
+    .logo,
+    .imgContainer {
+        width: calc(50% - 4%);
+        margin: 2%
+    }
+
+    
+
+    .logo {
+        @include flexVerCenter;
+        
+        h1 {
+            margin: 30px;
+        }
+        position: relative;
+        bottom: 5vh;
+
+
+        .imgContainer {
+            position: absolute;
+            top: calc(50% - 120px)
+        }
+    }
+
+
+}
+
+//Here begins the stylings for the three articles section which is the beginning of the about
+
+main.homePage {
+    
+    .threeArticles {
+        article {
+            
+            padding: 80px 0;
+
+            h3 {
+                margin: 30px 0px;
+            }
+            a {
+                padding: 30px 0px;
+            }
+            
+        }
+        
+
+    }
+    //Here are the styles for the top article
+
+    .topArticle {
+        background: $mainBackgroundColor;
+    }
+    //Here are the styles for the middle article and picture
+    .middleArticle {
+        .wrapper {
+            @include flexHorCenter;
+        }
+
+        .imgContainer
+        {
+            
+            width: 50%;
+            background: $accentBackgroundColor;
+            box-shadow: -500px 0 
+            $accentBackgroundColor;
+            //I'm basically cheating here to move the background color beyond the wrapper
+            
+            img {
+                background: $accentBackgroundColor;
+                position: relative;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+        
+
+        article {
+            width: calc(50% - 8%);
+            padding: 30px 0;
+            margin: 0 4%;
+        }
+
+    }
+
+    //Here beings the stylings for the bottom article and picture
+    .bottomArticle {
+        .wrapper {
+            @include flexHorCenter;
+            flex-direction: row-reverse;
+        }
+
+        article {
+            text-align: right;
+            width: calc(50% - 8%);
+            padding: 30px 0;
+            margin: 0 4%;
+        }
+
+        .imgContainer {
+            width: 50%;
+            position: relative;
+            top: 60px;
+            background: $secondaryBackgroundColor;
+            box-shadow: 500px 0 
+            $secondaryBackgroundColor;
+
+            img {
+                background: $secondaryBackgroundColor;
+                position: relative;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+
+    }
+
+    //Here begins the stylings for the middle of page navigation section
+
+    .midNav {
+        background: $mainBackgroundColor;
+        padding: 100px 0;
+
+        nav {
+            @include flexHorCenter;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        li {
+            width: 50%;
+            padding: 10px;
+        }
+
+        p {
+            font-weight: normal;
+            text-transform: lowercase;
+            font-size: 1.3rem;
+        }
+        
+        a {
+            padding: 0;
+            @include flexHorCenter;
+        }
+
+
+        .titleText {
+            width: 85%;
+            margin-left: 5%;
+        }
+
+        .iconContainer {
+            width: 10%;
+            height: 50px;
+            background-color: $secondaryBackgroundColor;
+            @include flexBothCenter;
+            border-radius: 50%;
+            position: relative;
+            bottom: 6px;
+            
+        }
+
+        i {
+            font-size: 2rem;
+        }
+        
+
+
+    }
+
+    //Here begins the stylings for the random accent picture in the middle of the page
+    .midPageImg {
+        display: flex;
+        min-width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    //Here begins the stylings for the final article with a picture near the bottom of the main page
+
+    .finalArticle {
+        padding: 100px;
+        background: $mainBackgroundColor;
+        .wrapper {
+            @include flexHorCenter;
+        }
+
+        .imgContainer {
+            width: 35%;
+
+            img {
+                box-shadow: 15px 15px $secondaryBackgroundColor;
+            }
+        }
+
+        article {
+            width: calc(65% - 80px);
+            margin: 0 40px;
+            a {
+                padding: 0;
+            }
+        }
+    }
+
+    .photos {
+        margin: 100px 0;
+
+        .wrapper {
+            @include flexHorCenter;
+        }
+        .imgContainer {
+            width: calc(100% / 3);
+            padding: 15px;
+        }
+
+    }
+
+}

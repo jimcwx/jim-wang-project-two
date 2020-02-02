@@ -1,0 +1,163 @@
+header.blogPage {
+
+  background: $secondaryBackgroundColor;
+
+  .topBar nav li:nth-child(4) {
+    a {
+        color: white;
+    }
+  }
+
+}
+
+main.blogPage {
+
+  
+  
+  h2 {
+    margin: 0;
+    position: relative;
+    top: -50px;
+    
+  }
+
+  .blogArea {
+    background:$mainBackgroundColor;
+    //Cheating here because getting rid of that white space would require me to change too much of the mark up and I'm afraid if I do that I'll screw up other stuff
+    position:relative;
+    top: -4px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .blogArticles {
+    @include flexHorCenter;
+
+    //Here begins the stylings for the aside section on the blog page
+    aside {
+      width: calc(30% - 20px);
+      margin-right: 20px;
+      .blogAbout {
+        padding: 20px;
+        background: white;
+        
+        h3 {
+          margin: 10px 0;
+        }
+        a {
+          padding: 0 5px;
+          text-transform: capitalize;
+          color: $accentTextColor;
+        }
+      }
+
+      .recentPosts {
+        margin-top: 20px;
+        padding: 20px;
+        background: white;
+
+        ul {
+          padding-left: 20px;
+          list-style: none;
+        }
+
+        ul li::before {
+          content: "\2022";
+          color: $secondaryBackgroundColor;
+          width: 1em;
+          margin-left: -1em;
+          display: inline-block;
+        }
+      }
+
+
+    }
+    //Here begins the stylings for the articles section of the blog page
+    .articles {
+      width: 70%;
+
+      article {
+        background: white;
+        margin: 0 0 20px 0;
+        padding: 20px;
+      }
+
+      article:first-child {
+        box-shadow: 0px 10px $secondaryBackgroundColor;
+      }
+
+      a{
+        color: $accentTextColor;
+        text-transform: capitalize;
+        padding: 0 5px;
+      }
+
+      article.withPic {
+        @include flexHorCenter;
+        
+        .imgContainer {
+          width: 20%;
+          margin-top: 20px;
+        }
+
+        .textSection {
+          width: calc(80% - 40px);
+          margin: 0 20px;
+        }
+
+        em {
+          color: $accentTextColor;
+        }
+      }
+      //Here begins the form stylings
+      .blogForm {
+        .nameEmail {
+          @include flexHorCenter;
+
+          input {
+            width: calc(50% - 10px);
+            padding: 20px;
+          }
+          input[type="text"] {
+            margin-left:0;
+          }
+          input[type="email"] {
+            margin-right: 0;
+          }
+        }
+
+        textarea {
+          margin-left: 0;
+          display: block;
+          min-width: 100%;
+          max-width: 100%;
+          padding: 20px;
+          height: 400px;
+          
+          
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          margin-bottom: 50px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        
+      }
+
+    }
+
+
+
+  }
+
+
+
+
+
+  
+}

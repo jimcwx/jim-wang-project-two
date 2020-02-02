@@ -1,0 +1,25 @@
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin flexHorCenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin flexVerCenter {
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@mixin flexBothCenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+

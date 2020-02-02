@@ -1,0 +1,95 @@
+//Here are the stylings for the contact.html Page
+
+//Here begins the stylings for the header of the contact page
+
+header.contactPage {
+  background:$secondaryBackgroundColor;
+
+  .topBar nav li:nth-child(5) {
+    a {
+        color: white;
+    }
+  }
+
+}
+
+//Here begins the stylings for the contact information and form section for the Contact.html page
+main.contactPage {
+  background: $mainBackgroundColor;
+  h2 {
+    margin: 0;
+    position: relative;
+    top: -50px;
+  }
+
+  .contactAndForm {
+    @include flexHorCenter;
+    
+    .information {
+      min-width: calc(40% - 40px);
+      background: white;
+      margin: 10px 20px 10px 20px;
+      padding: 20px;
+      max-height: 400px;
+      min-height: 400px;
+
+      ul {
+        padding-left: 0;
+        @include flexHorCenter;
+        justify-content: left;
+      }
+
+      .socialMedia li {
+        list-style-type: none;
+
+        a {
+          padding: 10px;
+          color: $secondaryBackgroundColor;
+        }
+      }
+    }
+
+    
+
+    .blogForm {
+
+        width: 60%;
+        .nameEmail {
+          @include flexHorCenter;
+
+          input {
+            width: calc(50% - 10px);
+            padding: 20px;
+          }
+          input[type="text"] {
+            margin-left:0;
+          }
+          input[type="email"] {
+            margin-right: 0;
+          }
+        }
+
+        textarea {
+          margin-left: 0;
+          display: block;
+          min-width: 100%;
+          max-width: 100%;
+          padding: 20px;
+          height: 400px;
+          
+          
+        }
+
+        input[type="submit"] {
+          width: 100%;
+          margin-bottom: 50px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        
+      }
+
+  }
+
+}

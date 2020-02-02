@@ -1,0 +1,20 @@
+.topBar {
+    
+    @include flexBothCenter;
+    ul {
+        @include flexBothCenter;
+        padding-left: 0px;
+        margin: 0px;
+        
+        li a {
+            transition: 1s;
+        }
+        
+    }
+
+    ul li a:hover,
+    ul li a:focus {
+        color: white;
+    }
+}
+
