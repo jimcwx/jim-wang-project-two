@@ -2,7 +2,7 @@ header.blogPage {
 
   background: $secondaryBackgroundColor;
 
-  .topBar nav li:nth-child(4) {
+  .topBar nav li:nth-child(2n) {
     a {
         color: white;
     }
