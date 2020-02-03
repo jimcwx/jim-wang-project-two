@@ -7,7 +7,16 @@
         margin: 0px;
         
         li a {
-            transition: 1s;
+            transition: color 1s, transform 1s;
+        }
+
+        li {
+            transition: color 1s, transform 1s;
+        }
+
+        li:hover a,
+        li:focus a {
+            transform:scale(2);
         }
         
     }
@@ -15,7 +24,8 @@
     ul li a:hover,
     ul li a:focus {
         color: white;
-        transform: scale(2);
+        transform:scale(2);
+        
     }
 }
 
